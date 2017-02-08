@@ -30,8 +30,8 @@ puts "5 skills created"
   title: "Portfolio title: #{portfolio_item}",
   subtitle: "My services",
   body: "lots of stuff, hey",
-  main_image: "http://placeholdit/350x200" ,
-  thumb_image: "http://placeholdit/600x400" 
+  main_image: "http://placehold.it/600x400" ,
+  thumb_image: "http://placehold.it/350x200" 
   )
 end
 
