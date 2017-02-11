@@ -16,8 +16,7 @@
     <%= yield %>
 
 	<%= render "shared/navbar", location: 'bottom' %>
-	<% if session[:source] %>
-	<p>Welcome from <%= session[:source] %></p>
-	<% end %>
+	
+	<%= source_helper("blog") %>
   </body>
 </html>
