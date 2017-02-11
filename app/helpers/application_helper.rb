@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end 
+  
+  def copyright_generator
+    SiteViewTool::Renderer.copyright 'Michelle Gerber', 'All Rights Reserved'
+  end
 end
