@@ -11,21 +11,20 @@
   </head>
 
   <body>
-	<div class="site-wrapper">
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
 
-		<div class="site-wrapper-inner">
+          <%= render "shared/application_navbar" %>
 
-			<div class="cover-container">
-	
-	          <%= render "shared/application_navbar" %>
-	          
-              <%= yield %>
-	         
-			  
-			  <%= render "shared/footer_application" %>
-	          <%= source_helper("application") %>
-		    </div>
-		</div>
-	</div>
+          <%= yield %>
+
+          <%= render "shared/footer_application" %>
+
+          <%= source_helper("application") %>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
