@@ -44,6 +44,7 @@ gem 'site_view_tool', git: 'https://github.com/LightbulbProductions/site_view_to
 gem 'petergate', '~> 1.7'
 gem 'font-awesome-rails', '~> 4.7'
 gem 'kaminari', '~> 1.0'
+gem 'jquery-ui-rails', '~> 6.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
