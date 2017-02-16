@@ -1,5 +1,7 @@
 @import "bootstrap";
 @import "font-awesome";
+@import "jquery-ui";
+@import "gritter";
 /*
  * Globals
  */
@@ -199,7 +201,7 @@ body {
 	z-index: -100;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background: image-url('amagansettbeachgrainy.jpeg') no-repeat;
+	background: image-url('amagansettbeachwave.jpeg') no-repeat;
 	background-size: cover;
 }
 
