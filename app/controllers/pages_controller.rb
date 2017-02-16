@@ -9,4 +9,8 @@ class PagesController < ApplicationController
 
   def contact
   end
+  
+  def tweet_news
+    @tweets = Socials.twitter_search
+  end
 end

@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+  get 'tweet-news', to: 'pages#tweet_news'
 
   resources :blogs do
     member do
