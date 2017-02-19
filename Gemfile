@@ -53,6 +53,9 @@ gem 'dotenv-rails', '~> 2.2'
 gem 'cocoon', '~> 1.2'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.1'
+gem 'redcarpet', '~> 3.4'
+gem 'coderay', '~> 1.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
