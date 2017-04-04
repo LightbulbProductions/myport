@@ -18,6 +18,7 @@
 //= require html.sortable
 //= require cocoon
 //= require gritter
+//= require masonry.pkgd
 //= require cable
 //= require portfolios
 //= require turbolinks

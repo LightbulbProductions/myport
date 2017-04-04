@@ -2,6 +2,7 @@
 @import "font-awesome";
 @import "jquery-ui";
 @import "gritter";
+@import "pages";
 /*
  * Globals
  */
@@ -10,7 +11,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: black;
 }
 
 /* Custom default button */
@@ -22,7 +23,11 @@ a:hover {
   background-color: #fff;
   border: .05rem solid #fff;
 }
-
+.btn-link {
+	color: black;
+	text-shadow: none;
+	margin-top: 400px;
+}
 
 /*
  * Base structure
@@ -32,6 +37,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   color: #fff;
   text-align: center;
@@ -77,7 +83,7 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: rgba(193,193,193,.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
@@ -88,7 +94,7 @@ body {
 }
 
 .nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
+  margin-left: 2em;
 }
 
 .nav-masthead .active {
@@ -124,6 +130,8 @@ body {
  */
 
 .mastfoot {
+   padding: 20px 5%;
+    font-weight: 300;
   color: rgba(255,255,255,.5);
 }
 
