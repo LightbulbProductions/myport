@@ -1,15 +1,20 @@
-<h1>We Should Work Together!</h1>
-<div class="row">
-	<div class="col-md-4">
-		<%= image_tag "meblurry.jpg", width: 300, alt: "Profile Image" %>
+<div class="container">
+<div id="contact-card">
+		<div id="blur"></div>
+	<div id="profile">
+		<h3>Contact Me!!!</h3>
+		<h5>For All Your</h5>
+		<h5>Full Stack Web Developer neeeeds</h5>
+		
+		<%= image_tag "urbexme.jpg",  alt: "profile image", class: 'profile-img' %>
+		
+		<div class="info">
+			<%= fa_icon "info", class: "fa-1x block" %>
+			<%= fa_icon "angle-down", class: "fa-2x block" %>
+			<p>Yes, Yes! Yes! Please do contact me with work opportunities together! I hope you love pizza and coffee. Helpful Links:</p><%= mail_to "michellegerber@lightbulbproductions.net" %><br><br>
+			<a href="http://twitter.com/pinklantern" target="blank"><%= fa_icon "twitter", class: "fa-2x" %></a>
+			<a href="https://www.linkedin.com/in/michellegerber/" target="blank"><%= fa_icon "linkedin", class: "fa-2x" %></a>
+			<a href="http://github.com/lightbulbproductions" target="blank"><%= fa_icon "github-alt", class: "fa-2x" %></a>
+		</div>
 	</div>
-	<div class="col-md-8">
-     <p>add clickable email "gerbermichelle23@gmail.com" </p>
-
-      <a href="http://twitter.com/pinklantern" target="blank">
-	    <%= fa_icon "twitter" %></a>
- 	
-       <a href="http://github.com/lightbulbproductions" target="blank">	
-	    <%= fa_icon "github-alt" %>
-    </div>
-</div>
+</div></div>

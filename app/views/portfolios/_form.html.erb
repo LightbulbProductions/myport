@@ -25,7 +25,7 @@
 	  
       <div class="form-group">
 		<label class="btn btn-primary">
-          Upload a thumg image file <%= f.file_field :thumb_image, style: 'display:none;' %>
+          Upload a thumb image file <%= f.file_field :thumb_image, style: 'display:none;' %>
 		</label>
       </div>
 	  
@@ -57,4 +57,5 @@
       <%= f.submit 'Save Portfolio Item', class: 'btn btn-primary btn-block' %>
     </div>
   </div>
+  <%= link_to 'Delete Portfolio Item', portfolio_path(portfolio_item), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
 <% end %>

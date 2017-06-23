@@ -12,14 +12,27 @@
 //
 //= require jquery
 //= require tether
-//= require bootstrap-sprockets
+//= require popper
 //= require jquery_ujs
 //= require jquery-ui
 //= require html.sortable
 //= require cocoon
-//= require gritter
 //= require masonry.pkgd
 //= require cable
 //= require portfolios
-//= require turbolinks
+//= require contact
+//= require pages
+//= require bootstrap-sprockets
 //= require_tree .
+	
+	
+$(function() {
+	setTimeout(function() {
+    $(".greeting").removeClass("hidden");
+        }, 500);
+    })();
+	
+
+	 
+		  
+		 

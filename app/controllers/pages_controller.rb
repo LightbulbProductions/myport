@@ -5,12 +5,10 @@ class PagesController < ApplicationController
   end
 
   def about
+    @skills = Skill.all
   end
 
   def contact
   end
   
-  def tweet_news
-    @tweets = Socials.twitter_search
-  end
 end

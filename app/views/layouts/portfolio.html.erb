@@ -12,19 +12,17 @@
   </head>
 
   <body>
-    
-	<%= render 'shared/application_navbar' %>
-   <!-- <%= render 'shared/application_navbar' unless logged_in?(:site_admin) %>
-	    -->
-   
-	
-    <%= yield %>
+	  <%= render 'shared/application_navbar' %>
 	 
+   
+      <%= yield %>
+
+	  <%= render 'shared/footer_application' %>	
 	
-	<%= render 'shared/portfolio_footer' %>	
-	<%= alerts %>
-	
-	<!-- <%= source_helper("application") %>  -->
-	
+
+
+
+   
   </body>
+  
 </html>

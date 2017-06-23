@@ -5,7 +5,7 @@ module ApplicationHelper
       " ".html_safe +
       (link_to "Login", new_user_session_path, class: style)
     else
-      link_to "Logout", destroy_user_session_path, method: :delete, class: style
+      (link_to "Logout", destroy_user_session_path, method: :delete, class: style)
     end
   end
 
@@ -30,25 +30,18 @@ module ApplicationHelper
         url: about_path,
         title: 'About Me'
       },
-      {
-        url: contact_path,
-        title: 'Contact'
-      },
-      {
-        url: blogs_path,
-        title: 'Blog'
-      },
+     
       {
         url: portfolios_path,
         title: 'Portfolio'
       },
       {
-        url: tweet_news_path,
-        title: 'Developer News'
-      }, 
+        url: contact_path,
+        title: 'Contact'
+      }
     ]
   end
-
+  
   def nav_helper style, tag_type
     nav_links = ''
 
@@ -58,20 +51,10 @@ module ApplicationHelper
 
     nav_links.html_safe
   end
-
+  
   def active? path
     "active" if current_page? path
   end
   
-  def alerts
-    alert = (flash[:alert] || flash[:error] || flash[:notice])
-    if alert
-       alert_generator alert 
-    end 
-  end
-  
-  def alert_generator msg
-    js add_gritter(msg, title: "WOAH THERE!", sticky: false) 
-  end
 
 end
